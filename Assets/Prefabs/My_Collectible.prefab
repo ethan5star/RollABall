@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 996035746000007681}
   - component: {fileID: 1954471278742146155}
   - component: {fileID: 7851934305035167329}
-  - component: {fileID: 6040436073597509471}
+  - component: {fileID: 238182181708398784}
   m_Layer: 0
   m_Name: My_Collectible
-  m_TagString: Untagged
+  m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,7 +109,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4918,7 +4918,7 @@ ParticleSystemRenderer:
   m_MeshWeighting1: 1
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
---- !u!114 &6040436073597509471
+--- !u!114 &238182181708398784
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4927,6 +4927,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8982524962912422665}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04a5c84dd2ca8490783fdb1cd6a94eb6, type: 3}
+  m_Script: {fileID: 11500000, guid: 68a90f590f7bb4fc7a552ee0d92cd383, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_EditorClassIdentifier: Assembly-CSharp::CollectibleController
+  collectSound: {fileID: 8300000, guid: 06f0714c8bbaa45fb999f60b54ba9053, type: 3}
+  collectParticlePrefab: {fileID: 7276764443248859406, guid: 2f5d313409ec64adc9647e645f3fd9f2, type: 3}

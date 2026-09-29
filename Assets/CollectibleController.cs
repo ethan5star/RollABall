@@ -18,11 +18,13 @@ public class CollectibleController : MonoBehaviour
 {
    [SerializeField] private AudioClip collectSound;
    [SerializeField] private GameObject collectParticlePrefab;
+   private GameManager gameManager;
    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        gameManager = FindAnyObjectByType<GameManager>();
+
     }
 
     // Update is called once per frame
@@ -37,6 +39,8 @@ public class CollectibleController : MonoBehaviour
         // Only executes if the collision was with the Player
         if (other.CompareTag("Player"))
         {
+            gameManager.UpdateRemaining();
+            
             // Spawn audio at the collectible's position (auto-destroys)
             AudioSource.PlayClipAtPoint(collectSound, transform.position);
 
@@ -47,7 +51,6 @@ public class CollectibleController : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 
 }
 
