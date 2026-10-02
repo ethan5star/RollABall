@@ -468,6 +468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   RemainingTextUI: {fileID: 1575206395}
+  winClip: {fileID: 8300000, guid: 1a1f66a2481cc4201b08ee51f23b9104, type: 3}
 --- !u!82 &279167190
 AudioSource:
   m_ObjectHideFlags: 0
